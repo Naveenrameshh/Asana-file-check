@@ -21,5 +21,5 @@ with process_step(display_name = "login_to_asana", description_md_key = "login_t
         # Check if we successfully logged in by looking for home page elements
         home_text = browser.read(element = "Home page heading or dashboard element")
         # Set success based on whether we see home page elements
-        if"Home"in home_text or"My Tasks"in home_text or"Projects"in home_text:
+        if "Home" in home_text or "My Tasks" in home_text or "Projects" in home_text:
           login_success = True
